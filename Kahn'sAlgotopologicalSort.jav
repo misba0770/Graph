@@ -3,7 +3,7 @@ class Solution
     //Function to return list containing vertices in Topological order. 
     static int[] topoSort(int V, ArrayList<ArrayList<Integer>> adj) 
     {
-        // add your code here
+        // Kahn's Algo(BFS)
         int[] inDegree=new int[V];
         for(int i=0;i<V;i++){
             for(Integer it:adj.get(i)){
